@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Cam</title>
+  </head>
+  <script type="text/javascript" language="Javascript">
+  	setInterval(getphoto, 5000);
+  	function getphoto() {
+  		var myImageElement = document.getElementById('photo');
+  		myImageElement.src = 'last.jpg?rand=' + Math.random();
+  	}
+  </script>
+  <style>
+  	body{
+  		margin: 0px;
+  	}
+  </style>
+<body>
+	<img src="last.jpg" alt="image" id='photo' style='width: 100%;' />
+</body>
+</html>
